@@ -1,7 +1,7 @@
 <div class="chores">
     <h3>Chores</h3>
     <ul>
-        <li *ngFor = 'let chore of chores'>{{chore}}</li>
+        <li *ngFor = 'let chore of chores' *ngIf = "chores.length > finishedChores.length,">{{chore}}</li>
     </ul>
 </div>
 <hr>
